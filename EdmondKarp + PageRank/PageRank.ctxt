@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=PageRank
+comment0.text=\n\ Write\ a\ description\ of\ class\ PageRank\ here.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=graph
+comment1.target=void\ computeLinks(Graph)
+comment1.text=\n\ build\ the\ fromLinks\ and\ toLinks\ \n
+comment2.params=graph
+comment2.target=void\ printPageRankGraphData(Graph)
+comment3.params=graph
+comment3.target=void\ computePageRank(Graph)
+numComments=4
