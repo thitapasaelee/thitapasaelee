@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.target=TestArticPts
+comment0.text=\n\ Program\ to\ test\ the\ Articulation\ Points\ algorithm.\n\n\ The\ program\ builds\ a\ graph\ and\ then\ searches\ for\ the\ articulation\ points.\n\ It\ reports\ all\ the\ points\ that\ your\ method\ should\ find,\ followed\ by\ the\n\ \ actual\ path\ your\ method\ found.\ If\ they\ don't\ match,\ then\ there\ is\ something\n\ \ wrong\ with\ your\ code\ -\ either\ you\ haven't\ built\ the\ graph\ correctly,\ or\n\ \ your\ AStar\ method\ is\ not\ correct.\n\n\ \ Note,\ this\ testing\ program\ is\ not\ a\ full\ test\ of\ your\ articulation\ points\ method\n\ \ and\ does\ not\ attempt\ to\ find\ all\ possible\ errors,\ but\ it\ may\ be\ helpful.\n\n
+comment1.params=pre
+comment1.target=void\ testArticPts(java.lang.String)
+comment2.params=id\ lonSteps\ latSteps
+comment2.target=Stop\ makeStop(java.lang.String,\ double,\ double)
+comment3.params=id\ lonSteps\ latSteps\ walking
+comment3.target=Stop\ makeStop(java.lang.String,\ double,\ double,\ boolean)
+comment4.params=name\ increment\ stops
+comment4.target=Line\ makeLine(java.lang.String,\ int,\ Stop[])
+comment5.params=str
+comment5.target=void\ report(java.lang.String)
+comment6.params=aPoints\ target
+comment6.target=void\ reportAPoints(java.util.Collection,\ java.util.List)
+comment7.params=graph
+comment7.target=void\ reportGraph(Graph)
+comment8.params=args
+comment8.target=void\ main(java.lang.String[])
+numComments=9

@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.target=TestAStar
+comment0.text=\n\ Program\ to\ test\ the\ AStar\ path\ finding.\n\n\ The\ program\ builds\ a\ graph\ and\ then\ searches\ for\ several\ paths\ in\ the\ graph\n\ It\ reports\ the\ target\ path\ (that\ your\ method\ should\ find)\ followed\ by\ the\n\ \ actual\ path\ your\ method\ found.\ If\ they\ don't\ match,\ then\ there\ is\ something\n\ \ wrong\ with\ your\ code\ -\ either\ you\ haven't\ built\ the\ graph\ correctly,\ or\n\ \ your\ AStar\ method\ is\ not\ correct.\n\ \n\ Note\ that\ an\ error\ in\ the\ AStar.java\ template\ means\ that\ finding\ paths\ by\n\ \ time\ does\ not\ work.\n\ The\ final\ test\ uses\ time.\ To\ make\ it\ work,\ you\ would\ need\ to\ replace\n\ \ the\ first\ three\ lines\ of\ findShortestPath(..)\ by\ the\ following\:\n\n\ \ \ \ \ \ public\ static\ List<Edge>\ findShortestPath(Stop\ start,\ Stop\ goal,\ String\ tOrD)\ {\n\ \ \ \ \ \ if\ (start\ \=\=\ null\ ||\ goal\ \=\=\ null)\ {return\ null;}\n\ \ \ \ \ \ timeOrDistance\=\ (tOrD.equals("time"))?"time"\:"distance";\n\n\ \ Note,\ this\ testing\ program\ is\ not\ a\ full\ test\ of\ your\ findShortestPath\ and\ does\ not\ attempt\n\ \ \ to\ find\ all\ possible\ errors,\ but\ it\ may\ be\ helpful.\n\n
+comment1.params=pre
+comment1.target=void\ testAStar(java.lang.String)
+comment2.params=id\ lonSteps\ latSteps
+comment2.target=Stop\ makeStop(java.lang.String,\ double,\ double)
+comment3.params=id\ lonSteps\ latSteps\ walking
+comment3.target=Stop\ makeStop(java.lang.String,\ double,\ double,\ boolean)
+comment4.params=name\ increment\ stops
+comment4.target=Line\ makeLine(java.lang.String,\ int,\ Stop[])
+comment5.params=str
+comment5.target=void\ report(java.lang.String)
+comment6.params=path\ target
+comment6.target=void\ reportPath(java.util.List,\ java.util.List)
+comment7.params=graph
+comment7.target=void\ reportGraph(Graph)
+comment8.params=args
+comment8.target=void\ main(java.lang.String[])
+numComments=9

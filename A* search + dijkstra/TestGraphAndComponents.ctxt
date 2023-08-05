@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=TestGraphAndComponents
+comment0.text=\n\ Program\ to\ test\ the\ graph\ construction\ (edges\ and\ neighbours)\ and\ the\n\ Strongly\ Connected\ Components\ algorithm\ for\ the\ WellingtonTransport\ assignment.\n\n\ Creates\ a\ small\ graph\ (23\ stops,26\ edges)\ and\ the\ computes\ the\ connected\ components.\n\ It\ then\ adds\ walking\ edges\ (8\ edges)\ and\ computes\ the\ connected\ components\ again.\n\n\ Expected\ output\ is\ listed\ as\ a\ comment\ at\ the\ end\ of\ the\ file.\n\ \n\ \ Stops\ are\ guaranteed\ to\ have\ unique\ names,\ therefore\ it\ doesn't\ matter\ whether\ \n\ \ \ the\ Stops\ class\ has\ the\ original\ or\ the\ corrected\ version\ of\ compareTo(..)\n\ \ The\ listing\ of\ stops\ and\ edges\ is\ done\ in\ alphabetic\ order\ to\ make\ it\ easy\ to\n\ \ \ compare\ your\ results\ with\ the\ expected\ output.\n\n\ \ Your\ program\ may\ number\ the\ components\ in\ a\ different\ order,\ but\ the\ reporting\n\ \ \ in\ this\ program\ canonicalises\ the\ numbering\ of\ the\ components\ \n\ \ \ so\ that\ your\ results\ can\ be\ compared\ to\ the\ expected\ output.\n\n\ \ Each\ output\ line\ of\ the\ test\ program\ starts\ with\ a\ |\ to\ help\ you\ distinguish\n\ \ \ the\ test\ output\ from\ any\ debugging\ output\ in\ your\ code.\n\n\ \ Note,\ this\ testing\ program\ is\ not\ a\ full\ test\ of\ your\ program\ and\ does\ not\ attempt\n\ \ \ to\ find\ all\ possible\ errors,\ but\ it\ may\ be\ helpful\ in\ your\ testing\n\ \ \ \n
+comment1.params=pre
+comment1.target=void\ testMakeGraphAndComponents(java.lang.String)
+comment2.params=id\ lonSteps\ latSteps
+comment2.target=Stop\ makeStop(java.lang.String,\ double,\ double)
+comment3.params=id\ lonSteps\ latSteps\ walking
+comment3.target=Stop\ makeStop(java.lang.String,\ double,\ double,\ boolean)
+comment4.params=name\ increment\ stops
+comment4.target=Line\ makeLine(java.lang.String,\ int,\ Stop[])
+comment5.params=str
+comment5.target=void\ report(java.lang.String)
+comment6.params=graph\ target
+comment6.target=void\ reportComponents(Graph,\ int)
+comment7.params=args
+comment7.target=void\ main(java.lang.String[])
+numComments=8

@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=PathItem
+comment0.text=\n\ AStar\ search\ (and\ Dijkstra\ search)\ uses\ a\ priority\ queue\ of\ partial\ paths\n\ that\ the\ search\ is\ building.\n\ Each\ partial\ path\ needs\ several\ pieces\ of\ information,\ to\ specify\n\ the\ path\ to\ that\ point,\ its\ cost\ so\ far,\ and\ its\ estimated\ total\ cost\n
+comment1.params=stop\ edge\ cost\ estimatedTotalCost
+comment1.target=PathItem(Stop,\ Edge,\ double,\ double)
+comment2.params=
+comment2.target=Stop\ getStop()
+comment3.params=
+comment3.target=Edge\ getEdge()
+comment4.params=
+comment4.target=double\ getCost()
+comment5.params=
+comment5.target=double\ getestimatedTotalCost()
+comment6.params=other
+comment6.target=int\ compareTo(PathItem)
+numComments=7
