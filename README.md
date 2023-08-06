@@ -1,7 +1,7 @@
-- 👋 Hi, I’m Thitapa (Pear) Saelee
-- 👀 I’m interested in AI, cybersecurity and software development
-- 💞️ I am a computer science student at VUW
-- 📫 my linked in is bit.ly/3qiemlr
+- 👋 Hello, I am Thitapa (Pear) Saelee
+- 👀 I am interested in AI, cybersecurity, cloud/networking and software development
+- 💞️ I am a second year computer science student at VUW
+- 📫 Connect with me through LinkedIn here: bit.ly/3qiemlr
 
 <!---
 thitapasaelee/thitapasaelee is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
