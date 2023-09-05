@@ -1,6 +1,6 @@
 - 👋 Hello, I am Thitapa (Pear) Saelee
 - 👀 I am interested in data sciences, AI/ML and cybersecurity
-- 💞️ I am a second year computer science student at VUW
+- 💞️ I am a second year computer science student at VUW, specialisation in AI and cybersecurity
 - 📫 Connect with me through LinkedIn here: bit.ly/3qiemlr
 
 <!---
