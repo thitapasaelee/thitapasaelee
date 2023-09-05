@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Train set</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <style>
+       * {  box-sizing: border-box;}
+          /* Create two equal columns that floats next to each other */
+        .column {
+           float: left;
+           width: 25%;
+           padding: 10px;
+           height: 150px; 
+
+         }
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+          }
+        </style>
+        
+        
+        <script type="text/javascript">     
+            
+            const target = [1,0,0,0];
+            const x1 = [0,0,1,1];
+            const x2 = [0,1,0,1];
+            y = [0,0,0,0];             
+            error = [0,0,0,0];
+            total_error =0;             
+            t = [0,0,0,0];
+            // names
+            ny = ['y0','y1','y2','y3']            
+            ne = ['e0','e1','e2','e3']            
+            function assign_initials(){
+            }            
+                         
+            // returns as string  
+            function neuron_output( w1,w2,b,x1,x2 ){
+                 z = parseFloat(w1)*parseFloat(x1)+ parseFloat(w2)*parseFloat(x2)+ parseFloat(b);   
+                 var y = 1.0/(1.0 + Math.exp(-z));
+                return y;            
+            } 
+            
+            function calculate_all_errors(){
+               w1 = document.getElementById('w1te').value;
+               w2 = document.getElementById('w2te').value;
+               b = document.getElementById('bte').value;
+               total_error = 0;
+               for ( j = 0 ; j < 4 ; j++){
+                   y[j] = neuron_output( w1,w2,b,x1[j],x2[j] );
+                   error[j] = y[j] - t[j];
+                   total_error = total_error + error[j]*error[j]; 
+               }       
+               total_error = Math.sqrt(total_error);
+            }
+            
+            function init_text_boxes(){
+            
+               var tbl = document.getElementById("tb");
+               for(var i =0; i <= 3 ;i++){
+               /*
+                  var yelement = document.createElement("input");               
+                  yelement.setAttribute("type", "text");
+                  yelement.setAttribute("value", "");
+                  yelement.setAttribute("name", "y"+i);
+                  yelement.setAttribute("style", "width:200px");
+                  var eelement = document.createElement("input");               
+                  eelement.setAttribute("type", "text");
+                  eelement.setAttribute("value", "");
+                  eelement.setAttribute("name", "y"+i);
+                  eelement.setAttribute("style", "width:200px");
+                  tbl.appendChild(yelement);
+                  tbl.appendChild(eelement);
+                  */
+                  
+                 tbl.innerHTML += "<label > x1="+x1[i]+"  x2="+x2[i]+" target = "+target[i] +"     y=</label> ";
+                 tbl.innerHTML += '<input type="text" id="'+ ny[i] +  '" name="' + ny[i]+ '"  size="4">';
+                 tbl.innerHTML += '<label > error=</label> <input type="text" id= "'+ne[i]+'" name="'+ne[i]+'" size="5"><br>';                  
+                }
+            } 
+                       
+            function onClick() {
+            
+               calculate_all_errors();
+               for(var i =0; i <= 3 ;i++){
+                   yid = 'y'+i; 
+                   document.getElementById(ny[i]).value = y[i].toFixed(2);
+                   let eid = 'e'+i; 
+                   document.getElementById(ne[i]).value = error[i].toFixed(2);
+                  
+               }
+               document.getElementById('terr').value = (total_error.toFixed(2));
+
+            }
+            window.onload = init_text_boxes;
+        </script>
+    </head>
+    
+    <body>  
+        <h3>Calculate output of neuron with 2 inputs</h3><br>
+        <div class="row">
+          <div class="column" style="background-color:#fff;">
+              <label for="w1te">w1:</label>
+              <input type="text" id="w1te" name="w1te"  size="5"><br><br>
+              <label for="w2te">w2:</label>
+              <input type="text" id="w2te" name="w2te" size="5"><br><br>
+              <label for="bte">b:</label>
+              <input type="text" id="bte" name="bte" size="5"><br><br>
+           </div>
+           <div class="column" style="background-color:#fff;">
+               <img src="one_layer.png" alt="Neuron with two inputs" width="200" height="100"> 
+            </div>
+         </div> <br>
+         <button type="button" onclick="onClick()" >Calculate</button><br><br><br>
+         <div id="tb">
+         </div>        
+
+  
+        <label > total error=</label> <input type="text" id="terr" name="terr" size="5"><br>
+        
+        
+        
+    </body>
+</html>
